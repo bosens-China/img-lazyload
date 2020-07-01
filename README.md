@@ -2,7 +2,8 @@
 
 ![size](https://img.shields.io/badge/size-2.4KB-blue) ![License](https://img.shields.io/badge/License-MLT-blue)
 
-[中文文档](/README_ZH.md)
+[中文文档](./README_ZH.md)
+
 It does not rely on high-performance JavaScript library, with a size of `2.4kb`. It supports modification of `src` and other elements `backgroundimage` attributes under img tag by default.
 
 Before using this library, you need to pay more attention to: **for the elements that need to be loaded lazily, you must set a `width height` or an initial image**.
@@ -61,7 +62,7 @@ lazyload(el: el, option?: options): void
 | name     | type                    | default  | required | describe                              |
 | -------- | ----------------------- | -------- | -------- | ------------------------------------- |
 | dataSrc  | `string`                | data-src | `false`  | The actual URL address of the element |
-| callback | `(el: Element) => void` | none       | `false`  | callback                              |
+| callback | `(el: Element) => void` | none     | `false`  | callback                              |
 
 The following is an advanced example. Load the image and clear the `data-src` attribute of the element. The style element of HTML is the same as above.
 
