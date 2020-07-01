@@ -1,5 +1,5 @@
 {
-  "name": "img-lazyload",
+  "name": "@boses/img-lazyload",
   "author": "boses",
   "desription": "Lazy loading of pictures",
   "keywords": [
