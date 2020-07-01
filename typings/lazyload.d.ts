@@ -1,16 +1,16 @@
+type el = string | Element | NodeList;
+type options = {
+  dataSrc: string;
+  callback: (el: Element) => void;
+};
 interface lazyload {
-  el: string | Element | NodeList;
-  options: {
-    dataSrc: string;
-    callback: (el: Element) => void;
-  }
+  el: el;
+  options: options;
 }
 
 type element = Array<Element>;
-export { lazyload };
+export { lazyload, element, el, options };
 
-export { element };
-
-export default function lazyload(el: lazyload["el"], option?: options) {
+export default function lazyload(el: el, option?: options): void {
   return new Lazyload(el, option as options);
 }

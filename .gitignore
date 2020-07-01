@@ -4,8 +4,8 @@
 *.log
 
 ## Local
-node_modules
+/node_modules
 
 ## Built-files
 .cache
-dist
+/dist

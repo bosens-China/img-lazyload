@@ -1,23 +1,50 @@
 {
   "name": "img-lazyload",
+  "author": "boses",
+  "desription": "Lazy loading of pictures",
+  "keywords": [
+    "lazyload",
+    "img",
+    "lazy"
+  ],
+  "bugs": "https://github.com/bosens-China/img-lazyload/issues",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/imgLazyload.common.js",
+  "exports": {
+    "require": "./dist/imgLazyload.common.js",
+    "default": "./dist/imgLazyload.esm.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bosens-China/img-lazyload"
+  },
+  "jsnext:main": "./dist/imgLazyload.esm.js",
+  "types": "./typings/lazyload.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
+    "@babel/preset-typescript": "^7.10.4",
     "@rollup/plugin-babel": "^5.0.4",
-    "@rollup/plugin-typescript": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^3.4.0",
     "@typescript-eslint/parser": "^3.4.0",
     "eslint": "^7.3.1",
     "eslint-config-alloy": "^3.7.3",
     "rollup": "^2.18.0",
+    "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^9.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
     "typescript": "^3.9.5"
   },
   "scripts": {
     "build": "rollup -c"
-  }
+  },
+  "files": [
+    "/dist",
+    "/typings",
+    "README_ZH.md"
+  ]
 }
